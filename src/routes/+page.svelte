@@ -337,10 +337,7 @@
     }
 
     .text_container {
-        display: flex;
         height: 36px;
-        align-items: center;
-        justify-content: center;
     }
 
     .display, .functionality {
@@ -387,19 +384,19 @@
     }
 
     .arrow_right, .arrow_down, .arrow_collapse {
-        display: flex;
         padding: 8px 8px;
-        align-items: center;
-        justify-content: center;
         border-radius: 4px;
     }
 
-    .arrow_expand {
+    .arrow_right, .arrow_down, .arrow_collapse, .text_container, .arrow_expand, .grid_box {
         display: flex;
-        padding: 5px 5px;
-        aspect-ratio: 1;
         align-items: center;
         justify-content: center;
+    }
+
+    .arrow_expand {
+        padding: 5px;
+        aspect-ratio: 1;
         border-radius: 4px;
     }
 
@@ -420,9 +417,6 @@
     }
 
     .grid_box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         aspect-ratio: 1;
         opacity: 10%;
     }
@@ -442,66 +436,45 @@
         transform: rotate(90deg);
     }
 
-    .container_top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .container_bottom {
+    .container_top, .container_bottom, .padding_icon, .padding_icon_container, .padding_text, .mark_icon, .triangle_down_icon, .text_color_icon {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .padding_icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .padding_icon_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 4px;
     }
 
-    .padding_text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .padding_text, .font_selector, .text_color_selector, .opacity, .background_color {
         font-size: 14px;
         font-weight: 400;
     }
 
-    .layout_icons_container {
+    .layout_icons_container, .font_icons_container {
         display: flex;
         flex-direction: column;
+    }
+
+    .layout_icons_container {
         gap: 10px;
     }
 
     .font_icons_container {
-        display: flex;
-        flex-direction: column;
         gap: 5px;
     }
 
-    .mark_selector, .font_selector, .text_color_selector {
+    .text_color, .font, .opacity_selector, .color_bucket, .background_color_container, .radius_selector_container, .border_corner_selector_container, 
+    .mark_selector, .font_selector, .text_color_selector, .opacity, .background_color {
         display: flex;
         align-items: center;
+    }
+
+    .mark_selector, .font_selector, .text_color_selector {
         justify-content: space-between;
     }
 
-    .font_selector, .text_color_selector {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
     .mark_icon, .triangle_down_icon, .text_color_icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         aspect-ratio: 1;
         padding: 4px;
     }
@@ -509,28 +482,6 @@
     .text_color_icon {
         background: var(--text-orange);
         border-radius: 4px;
-    }
-
-    .text_color, .font {
-        display: flex;
-        align-items: center;
-    }
-
-    .opacity_selector {
-        display: flex;
-        align-items: center;
-    }
-
-    .opacity, .background_color {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .color_bucket {
-        display: flex;
-        align-items: center;
     }
 
     .color_bucket {
@@ -541,8 +492,6 @@
     }
 
     .background_color_container, .radius_selector_container, .border_corner_selector_container {
-        display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 
