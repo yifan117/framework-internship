@@ -21,36 +21,28 @@
     {/each}
 </div>
 
-<style>
-    .align_container {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        aspect-ratio: 1;
-        border: 2px solid rgba(33, 37, 45, 0.1);
-        border-radius: 2px;
-    }
+<style lang='stylus'>
+$color-1 = rgba(33, 37, 45, 0.1)
 
-    .special_grid_box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        aspect-ratio: 1;
+.align_container
+    display grid
+    grid-template-rows repeat(3, 1fr)
+    grid-template-columns repeat(3, 1fr)
+    aspect-ratio 1
+    border 2px solid $color-1
+    border-radius 2px
 
-        /* filter: invert(24%) sepia(43%) saturate(5069%) hue-rotate(248deg) brightness(103%) contrast(93%); */
+.special_grid_box
+    display flex
+    align-items center
+    justify-content center
+    aspect-ratio 1
+    transform rotate(90deg)
 
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-
-    .grid_box {
-        aspect-ratio: 1;
-        opacity: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.grid_box
+    aspect-ratio 1
+    opacity 10%
+    display flex
+    align-items center
+    justify-content center
 </style>

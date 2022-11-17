@@ -27,7 +27,6 @@
 </div>
 
 <style lang='stylus'>
-    
     .arrow 
         display: flex
         align-items: center
