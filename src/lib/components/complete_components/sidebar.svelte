@@ -81,13 +81,14 @@ $color-1 = rgba(33, 37, 45, 0.2)
 
     .container
         overflow-y scroll
-        overflow-x hidden
         scrollbar-color var(--brand-purple) rgba(33, 37, 45, 0.2)
         scrollbar-width thin
         background var(--sidebar-color)
+        max-width 280px
+        width 100%
 
     .side_bar
-        max-width 200px
+        max-width 250px
         display flex
         background var(--sidebar-color)
         justify-content space-between
@@ -97,10 +98,11 @@ $color-1 = rgba(33, 37, 45, 0.2)
         gap 8px
 
     .text_container
-        height 36px
         display flex
         align-items center
         justify-content center
+        flex-direction column
+        width auto
 
     .contents_box_container
         display flex
