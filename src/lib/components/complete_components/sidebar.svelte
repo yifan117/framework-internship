@@ -4,6 +4,18 @@
 	import Font from '$lib/components/complete_components/font.svelte';
     import Container from '$lib/components/complete_components/container.svelte';
 	import Tabs from '$lib/components/complete_components/tabs.svelte';
+	import type { LayoutData } from '$lib/types';
+    import type { ColorsData } from '$lib/types';
+	
+    let layout_data: LayoutData = {
+        display_vertical_layout: true,
+        display_collapsed_layout: true,
+    }
+
+    let colors_data: ColorsData = {
+        display_vertical_colors: true,
+        display_collapsed_colors: true,
+    }
 </script>
 
 <div class="container">
@@ -13,11 +25,11 @@
         </div>
 
         <div class="contents_box_container">
-            <Layout/>
+            <Layout bind:layout_data={layout_data}/>
         </div>
 
         <div class="contents_box_container">
-            <Colors/>
+            <Colors bind:colors_data={colors_data}/>
         </div>
 
         <div class="contents_box_container">

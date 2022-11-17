@@ -1,7 +1,11 @@
 <script lang='ts'>
     import PaddingSelector from '$lib/components/building_blocks/padding_selector_colors.svelte';
     import AlignContainer from '$lib/components/building_blocks/align_container.svelte';
-    import DirectionSelector from '$lib/components/building_blocks/direction_selector.svelte';
+    import DirectionSelectorColors from '$lib/components/building_blocks/DirectionSelectorColors.svelte';
+
+    import type { ColorsData } from '$lib/types';
+
+    export let colors_data: ColorsData
 </script>
 
 <div class="header_container">
@@ -10,7 +14,7 @@
 <div class="layout_icons_container">
     <div class="container_top">
         <div class="direction_selector">
-            <DirectionSelector/>
+            <DirectionSelectorColors bind:display_vertical_colors={colors_data.display_vertical_colors} bind:display_collapsed_colors={colors_data.display_collapsed_colors}/>
         </div>
         <div class="align_container">
             <AlignContainer/>

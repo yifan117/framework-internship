@@ -1,7 +1,10 @@
 <script lang='ts'>
     import PaddingSelector from '$lib/components/building_blocks/padding_selector_layout.svelte';
     import AlignContainer from '$lib/components/building_blocks/align_container.svelte';
-    import DirectionSelector from '$lib/components/building_blocks/direction_selector.svelte';
+    import DirectionSelector from '$lib/components/building_blocks/DirectionSelectorLayout.svelte';
+	import type { LayoutData } from '$lib/types';
+
+    export let layout_data: LayoutData
 </script>
 
 <div class="header_container">
@@ -10,7 +13,7 @@
 <div class="layout_icons_container">
     <div class="container_top">
         <div class="direction_selector">
-            <DirectionSelector/>
+            <DirectionSelector bind:display_vertical_layout={layout_data.display_vertical_layout} bind:display_collapsed_layout={layout_data.display_collapsed_layout}/>
         </div>
         <div class="align_container">
             <AlignContainer/>
