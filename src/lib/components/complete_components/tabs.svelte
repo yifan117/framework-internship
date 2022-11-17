@@ -54,16 +54,20 @@ $color-1 = rgba(33, 37, 45, 0.2)
     .grey
         height 2px
         background rgba(45, 55, 67, 0.2)
+        max-width 177px
         width 100%
         border-radius 4px
-        position relative
+        position absolute
 
     .purple
         height 2px
         border-radius 4px
-        background var(----brand-purple)
-        width 30px
-        z-index 999
-        position absolute
+        background var(--brand-purple)
+        max-width 70px
+        width 100%
+        // position relative
+        // max-width 110px
+        // left 68px
+
 
 </style>
