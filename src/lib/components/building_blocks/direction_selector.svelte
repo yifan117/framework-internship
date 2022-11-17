@@ -28,22 +28,22 @@
 
 <style lang='stylus'>
     .arrow 
-        display: flex
-        align-items: center
-        justify-content: center
-        padding: 8px
-        border-radius: 4px
+        display flex
+        align-items center
+        justify-content center
+        padding 8px
+        border-radius 4px
         
         &.right, &.collapse
-            background: rgba(33, 37, 45, 0.08)
+            background rgba(33, 37, 45, 0.08)
 
     .arrows
-        display: flex
-        justify-content: space-between
-        gap: 4px
+        display flex
+        justify-content space-between
+        gap 4px
 
         &.container
-            flex-direction: column
-            gap: 8px
-            justify-content: center
+            flex-direction column
+            gap 8px
+            justify-content center
 </style>
