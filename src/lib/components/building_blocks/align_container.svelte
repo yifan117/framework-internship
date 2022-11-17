@@ -32,7 +32,8 @@
         border 2px solid $color-1
         border-radius 2px
 
-    .grid.box, .grid.box.special
+    .grid.box
+    .grid.box.special
         aspect-ratio 1
         opacity 10%
         display flex
