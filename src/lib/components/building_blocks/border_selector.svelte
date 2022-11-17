@@ -47,67 +47,57 @@
     </div>
 </div>
 
-<style>
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-    }
+<style lang='stylus'>
+.top
+.bottom
+.container
+    display flex
+    align-items center
+    justify-content center
+    width 100%
+    gap 8px
 
-    .top, .bottom {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        gap: 8px;
-    }
+.container
+    flex-direction column
 
-    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+input::-webkit-outer-spin-button
+input::-webkit-inner-spin-button
+    appearance none
+    margin 0
 
-    input[type=number] {
-        -moz-appearance: textfield;
-    }
+input[type=number]
+    appearance textfield
 
-    input {
-        text-align: center;
-        max-width: 20px;
-        border: none;
-    }
+input
+    text-align center
+    max-width 20px
+    border none
+    width: 100%;
 
-    input:focus, input:hover {
-        outline: none;
-        border-radius: 3px;
-    }
+input:focus
+input:hover
+    outline none
+    border-radius 3px
 
-    .padding_icon, label, .padding_text {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.padding_icon
+label
+.padding_text
+    display flex
+    align-items center
+    justify-content space-between
 
-    label {
-        padding: 4px;
-        gap: 8px;
-        border-radius: 4px;
-    }
+label
+    padding 4px
+    gap 8px
+    border-radius 4px
 
-    label:hover {
-        outline: 1.5px solid rgba(127, 17, 224, 0.3);
-    }
+    &:hover
+        outline 1.5px solid rgba(127, 17, 224, 0.3)
 
-    label:focus-within {
-        outline: 1.5px solid var(--brand-purple);
-    }
+    &:focus-within
+        outline 1.5px solid var(--brand-purple)
 
-    .padding_text {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
+.padding_text
+    font-size 14px
+    font-weight 400
 </style>
