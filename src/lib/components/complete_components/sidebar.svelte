@@ -13,7 +13,7 @@
         </div>
 
         <div class="contents_box_container">
-        <Layout/>
+            <Layout/>
         </div>
 
         <div class="contents_box_container">
