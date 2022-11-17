@@ -2,6 +2,10 @@
     import PaddingLeftRight from '$lib/icons/PaddingLeftRight.svelte';
     import PaddingTopDown from '$lib/icons/PaddingTopDown.svelte';
     import Radius from '$lib/icons/Radius.svelte'
+
+    export let radius: number;
+    export let padding_left_right_container: number;
+    export let padding_top_bottom_container: number;
 </script>
 
 <div class="padding_icon_container">
@@ -10,7 +14,7 @@
             <Radius size="20px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='radius_CONTAINER'/>
+            <input type='number' id='radius_CONTAINER' bind:value={radius}/>
         </div>
     </label>
 </div>
@@ -21,7 +25,7 @@
             <PaddingLeftRight size="20px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='padding_left_right_CONTAINER'/>
+            <input type='number' id='padding_left_right_CONTAINER' bind:value={padding_left_right_container}/>
         </div>
     </label>
 </div>
@@ -32,7 +36,7 @@
             <PaddingTopDown size="20px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='padding_top_down_CONTAINER'/>
+            <input type='number' id='padding_top_down_CONTAINER' bind:value={padding_top_bottom_container}/>
         </div>
     </label>
 </div>

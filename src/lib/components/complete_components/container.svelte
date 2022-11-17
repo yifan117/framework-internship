@@ -2,6 +2,10 @@
     import ColorFill from '$lib/icons/FormatColorFill.svelte';
     import BorderRadius from '$lib/components/building_blocks/border_radius.svelte';
     import BorderSelector from '$lib/components/building_blocks/border_selector.svelte';
+    
+    import type { ContainerData } from '$lib/types';
+
+    export let container_data: ContainerData;
 </script>
 
 <div class="header_container">
@@ -18,11 +22,20 @@
     </div>
 
     <div class="radius_selector_container">
-        <BorderRadius/>
+        <BorderRadius 
+        bind:radius={container_data.radius} 
+        bind:padding_left_right_container={container_data.padding_left_right_container} 
+        bind:padding_top_bottom_container={container_data.padding_top_bottom_container}
+        />
     </div>
 
     <div class="border_corner_selector_container" style='flex-direction: column'>
-        <BorderSelector/>
+        <BorderSelector
+        bind:radius_top_left={container_data.radius_top_left}
+        bind:radius_top_right={container_data.radius_top_right}
+        bind:radius_bottom_left={container_data.radius_bottom_left}
+        bind:radius_bottom_right={container_data.radius_bottom_right}
+        />
     </div>
 </div>
 

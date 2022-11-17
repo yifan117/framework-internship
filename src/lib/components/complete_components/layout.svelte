@@ -13,7 +13,10 @@
 <div class="layout_icons_container">
     <div class="container_top">
         <div class="direction_selector">
-            <DirectionSelector bind:display_vertical_layout={layout_data.display_vertical_layout} bind:display_collapsed_layout={layout_data.display_collapsed_layout}/>
+            <DirectionSelector 
+            bind:display_vertical_layout={layout_data.display_vertical_layout} 
+            bind:display_collapsed_layout={layout_data.display_collapsed_layout}
+            />
         </div>
         <div class="align_container">
             <AlignContainer/>
@@ -21,7 +24,11 @@
     </div>
 
     <div class="container_bottom">
-        <PaddingSelector/>
+        <PaddingSelector 
+        bind:gap_layout={layout_data.gap_layout} 
+        bind:padding_left_right_layout={layout_data.padding_left_right_layout} 
+        bind:padding_top_bottom_layout={layout_data.padding_top_bottom_layout}
+        />
     </div>
 </div>
 

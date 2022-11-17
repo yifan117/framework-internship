@@ -2,6 +2,10 @@
     import Padding from '$lib/icons/PaddingIcon.svelte';
     import PaddingLeftRight from '$lib/icons/PaddingLeftRight.svelte';
     import PaddingTopDown from '$lib/icons/PaddingTopDown.svelte';
+
+    export let gap_color: number;
+    export let padding_left_right_color: number;
+    export let padding_top_bottom_color: number;
 </script>
 
 <label for='padding_COLORS'>
@@ -9,7 +13,7 @@
         <Padding/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_COLORS'/>
+        <input type='number' id='padding_COLORS' bind:value={gap_color}/>
     </div>
 </label>
 
@@ -18,7 +22,7 @@
         <PaddingLeftRight/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_left_right_COLORS'/>
+        <input type='number' id='padding_left_right_COLORS' bind:value={padding_left_right_color}/>
     </div>
 </label>
 
@@ -27,7 +31,7 @@
         <PaddingTopDown/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_top_down_COLORS'/>
+        <input type='number' id='padding_top_down_COLORS' bind:value={padding_top_bottom_color}/>
     </div>
 </label>
 

@@ -4,24 +4,40 @@
 	import Font from '$lib/components/complete_components/font.svelte';
     import Container from '$lib/components/complete_components/container.svelte';
 	import Tabs from '$lib/components/complete_components/tabs.svelte';
-	import type { LayoutData } from '$lib/types';
+	import type { ContainerData, LayoutData } from '$lib/types';
     import type { ColorData } from '$lib/types';
     import type { FontData } from '$lib/types';
 	
     let layout_data: LayoutData = {
         display_vertical_layout: true,
         display_collapsed_layout: true,
+        gap_layout: 4,
+        padding_left_right_layout: 4,
+        padding_top_bottom_layout: 4,
     }
 
     let color_data: ColorData = {
         display_vertical_color: true,
         display_collapsed_color: true,
+        gap_color: 4,
+        padding_left_right_color: 4,
+        padding_top_bottom_color: 4,
     }
 
     let font_data: FontData = {
         is_bold: false,
         is_italic: false,
         is_underlined: false,
+    }
+
+    let container_data: ContainerData = {
+        radius: 4,
+        padding_left_right_container: 4,
+        padding_top_bottom_container: 4,
+        radius_top_left: 4,
+        radius_top_right: 4,
+        radius_bottom_left: 4,
+        radius_bottom_right: 4,
     }
 
 
@@ -46,7 +62,7 @@
         </div>
 
         <div class="contents_box_container">
-            <Container/>
+            <Container bind:container_data={container_data}/>
         </div>
 
         <div class="contents_box_container">

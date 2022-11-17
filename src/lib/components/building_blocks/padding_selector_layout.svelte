@@ -2,6 +2,10 @@
     import Padding from '$lib/icons/PaddingIcon.svelte';
     import PaddingLeftRight from '$lib/icons/PaddingLeftRight.svelte';
     import PaddingTopDown from '$lib/icons/PaddingTopDown.svelte';
+
+    export let gap_layout: number;
+    export let padding_left_right_layout: number;
+    export let padding_top_bottom_layout: number;
 </script>
 
 <label for='padding_LAYOUT'>
@@ -9,7 +13,7 @@
         <Padding/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_LAYOUT'/>
+        <input type='number' id='padding_LAYOUT' bind:value={gap_layout}/>
     </div>
 </label>
 
@@ -18,7 +22,7 @@
         <PaddingLeftRight/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_left_right_LAYOUT'/>
+        <input type='number' id='padding_left_right_LAYOUT' bind:value={padding_left_right_layout}/>
     </div>
 </label>
 
@@ -27,7 +31,7 @@
         <PaddingTopDown/>
     </div>
     <div class="padding_text">
-        <input type='number' id='padding_top_down_LAYOUT'/>
+        <input type='number' id='padding_top_down_LAYOUT' bind:value={padding_top_bottom_layout}/>
     </div>
 </label>
 

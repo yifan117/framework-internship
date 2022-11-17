@@ -5,7 +5,7 @@
 
     import type { ColorData } from '$lib/types';
 
-    export let color_data: ColorData
+    export let color_data: ColorData;
 </script>
 
 <div class="header_container">
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="container_bottom">
-        <PaddingSelector/>
+        <PaddingSelector bind:gap_color={color_data.gap_color} bind:padding_left_right_color={color_data.padding_left_right_color} bind:padding_top_bottom_color={color_data.padding_top_bottom_color}/>
     </div>
 </div>
 

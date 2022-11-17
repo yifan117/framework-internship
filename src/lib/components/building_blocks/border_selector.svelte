@@ -3,6 +3,11 @@
     import BorderRadiusBottomRight from '$lib/icons/BorderRadiusBottomRight.svelte';
     import BorderRadiusTopLeft from '$lib/icons/BorderRadiusTopLeft.svelte';
     import BorderRadiusTopRight from '$lib/icons/BorderRadiusTopRight.svelte';
+
+    export let radius_top_left: number;
+    export let radius_top_right: number;
+    export let radius_bottom_left: number;
+    export let radius_bottom_right: number;
 </script>
 
 <div class="top">
@@ -11,7 +16,7 @@
                 <BorderRadiusTopLeft size="25px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='border_radius_top_left'/>
+            <input type='number' id='border_radius_top_left' bind:value={radius_top_left}/>
         </div>
     </label>
 
@@ -20,7 +25,7 @@
             <BorderRadiusTopRight size="25px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='border_radius_top_right'/>
+            <input type='number' id='border_radius_top_right' bind:value={radius_top_right}/>
         </div>
     </label>
 </div>
@@ -31,7 +36,7 @@
             <BorderRadiusBottomLeft size="25px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='border_radius_bottom_left'/>
+            <input type='number' id='border_radius_bottom_left' bind:value={radius_bottom_left}/>
         </div>
     </label>
 
@@ -40,7 +45,7 @@
             <BorderRadiusBottomRight size="25px"/>
         </div>
         <div class="padding_text">
-            <input type='number' id='border_radius_bottom_right'/>
+            <input type='number' id='border_radius_bottom_right' bind:value={radius_bottom_right}/>
         </div>
     </label>
 </div>
