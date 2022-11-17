@@ -5,32 +5,24 @@
     import TextOne from '$lib/icons/TextOne.svelte';
 </script>
 
-<div class="container">
-    <div class="mark_icon">
-        <FormatBold size='20px'/>
-    </div>
-    <div class="mark_icon">
-        <FormatItalic size='20px'/>
-    </div>
-    <div class="mark_icon">
-        <FormatUnderline size='20px'/>
-    </div>
-    <div class="mark_icon">
-        <TextOne size='20px'/>
-    </div>
+<div class="mark_icon">
+    <FormatBold/>
+</div>
+<div class="mark_icon">
+    <FormatItalic/>
+</div>
+<div class="mark_icon">
+    <FormatUnderline/>
+</div>
+<div class="mark_icon">
+    <TextOne/>
 </div>
 
-<style>
-    .mark_icon {
-        display: flex;
-        align-items: center;
-        aspect-ratio: 1;
-        padding: 4px;
-    }
-
-    .container {
-        display: inline-flex;
-        justify-content: space-between;
-        width: 100%;
-    }
+<style lang='stylus'>
+    .mark_icon
+        display flex
+        align-items center
+        aspect-ratio 1
+        padding 4px
+        font-size: 20px;
 </style>

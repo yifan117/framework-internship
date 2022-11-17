@@ -36,7 +36,11 @@
     </div>
 </div>
 
-<style>
+<style lang='stylus'>
+
+    .mark_selector
+        display inline-flex
+        justify-content space-between
 
     .container {
         display: flex;
