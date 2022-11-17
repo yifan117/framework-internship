@@ -2,13 +2,11 @@
 
 </script>
 
-<div class="container">
-    <div class="display">
-        Display
-    </div>
-    <div class="functionality">
-        Functionality
-    </div>
+<div class="display">
+    Display
+</div>
+<div class="functionality">
+    Functionality
 </div>
 
 <style lang='stylus'>
@@ -29,8 +27,5 @@ $color-1 = rgba(33, 37, 45, 0.2)
         border-bottom 2.5px solid $color-1
         opacity 50%
         font-weight 600
-
-    .container
-        display flex
 
 </style>

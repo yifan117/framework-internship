@@ -3,32 +3,31 @@
     import AutoLayoutBars from 'svelte-material-icons/Poll.svelte';
 </script>
 
-    {#each Array(3) as _}
-        <div class="grid box">
-            <SquareSmall/>
-        </div>
-    {/each}
-
-    <div class="grid box special">
-        <AutoLayoutBars size='22px' color='var(--brand-purple)'/>
+{#each Array(3) as _}
+    <div class="grid box">
+        <SquareSmall/>
     </div>
+{/each}
 
-    {#each Array(5) as _}
-        <div class="grid box">
-            <SquareSmall/>
-        </div>
-    {/each}
+<div class="grid box special">
+    <AutoLayoutBars size='22px' color='var(--brand-purple)'/>
+</div>
+
+{#each Array(5) as _}
+    <div class="grid box">
+        <SquareSmall/>
+    </div>
+{/each}
 
 <style lang='stylus'>
     .grid.box
-    .grid.box.special
         aspect-ratio 1
         opacity 10%
         display flex
         align-items center
         justify-content center
 
-    .grid.box.special
-        transform rotate(90deg)
-        opacity 100%
+        &.special
+            transform rotate(90deg)
+            opacity 100%
 </style>

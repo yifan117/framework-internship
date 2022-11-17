@@ -4,34 +4,27 @@
     import DirectionSelector from '$lib/components/building_blocks/direction_selector.svelte';
 </script>
 
-<div class="container">
-    <div class="header_container">
-        LAYOUT
+<div class="header_container">
+    LAYOUT
+</div>
+<div class="layout_icons_container">
+    <div class="container_top">
+        <div class="direction_selector">
+            <DirectionSelector/>
+        </div>
+        <div class="align_container">
+            <AlignContainer/>
+        </div>
     </div>
-    <div class="layout_icons_container">
-        <div class="container_top">
-            <div class="direction_selector">
-                <DirectionSelector/>
-            </div>
-            <div class="align_container">
-                <AlignContainer/>
-            </div>
-        </div>
 
-        <div class="container_bottom">
-            <PaddingSelector/>
-        </div>
+    <div class="container_bottom">
+        <PaddingSelector/>
     </div>
 </div>
 
 <style lang='stylus'>
 
 $color-1 = rgba(33, 37, 45, 0.1)
-
-    .container
-        display flex
-        flex-direction column
-        gap 5px
 
     .header_container
         display flex

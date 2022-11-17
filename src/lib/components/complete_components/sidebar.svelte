@@ -57,6 +57,7 @@ $color-1 = rgba(33, 37, 45, 0.2)
         flex-direction column
         padding 10px
         width 100%
+        gap 8px
 
     .text_container
         height 36px

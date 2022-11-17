@@ -4,48 +4,42 @@
     import MarkSelector from '$lib/components/building_blocks/mark_selector.svelte';
 </script>
 
-<div class="container">
-    <div class="header_container">
-        FONT
+<div class="header_container">
+    FONT
+</div>
+<div class="font_icons_container">
+    <div class="font_selector">
+        <div class="font">
+            Normal Text
+        </div>
+        <div class="triangle_down_icon">
+            <TriangleDown size='20px'/>
+        </div>
     </div>
-    <div class="font_icons_container">
-        <div class="font_selector">
-            <div class="font">
-                Normal Text
-            </div>
-            <div class="triangle_down_icon">
-                <TriangleDown size='20px'/>
-            </div>
+    <div class="mark_selector">
+        <MarkSelector/>
+    </div>
+    <div class="text_color_selector">
+        <div class="text_color">
+            Text Color
         </div>
-        <div class="mark_selector">
-            <MarkSelector/>
+        <div class="text_color_icon">
+            <FormatText size='20px'/>
         </div>
-        <div class="text_color_selector">
-            <div class="text_color">
-                Text Color
-            </div>
-            <div class="text_color_icon">
-                <FormatText size='20px'/>
-            </div>
-        </div>
-        <div class="opacity_selector">
-            <div class="opacity">
-                Opacity
-            </div>
+    </div>
+    <div class="opacity_selector">
+        <div class="opacity">
+            Opacity
         </div>
     </div>
 </div>
+
 
 <style lang='stylus'>
 
     .mark_selector
         display inline-flex
         justify-content space-between
-
-    .container
-        display flex
-        flex-direction column
-        gap 5px
 
     .header_container
         display flex
