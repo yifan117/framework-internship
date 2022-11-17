@@ -9,7 +9,7 @@
     import FormatText from 'svelte-material-icons/FormatText.svelte';
     import TriangleDown from 'svelte-material-icons/TriangleSmallDown.svelte';
     
-    import ColorFill from '../lib/icons/FormatColorFill.svelte';
+    import ColorFill from '$lib/icons/FormatColorFill.svelte';
     import Padding from '../lib/icons/PaddingIcon.svelte';
     import ArrowCollapse from '../lib/icons/ArrowCollapse.svelte';
     import ArrowExpand from '../lib/icons/ArrowExpand.svelte';
@@ -69,7 +69,7 @@
                         {/each}
 
                         <div class="special_grid_box">
-                            <AutoLayoutBars size='22px'/>
+                            <AutoLayoutBars size='22px' color='var(--brand-purple)'/>
                         </div>
 
                         {#each Array(5) as _}
@@ -140,7 +140,7 @@
                         {/each}
 
                         <div class="special_grid_box">
-                            <AutoLayoutBars size='22px'/>
+                            <AutoLayoutBars size='22px' color="var(--brand-purple)"/>
                         </div>
 
                         {#each Array(5) as _}
@@ -282,7 +282,7 @@
                     </div>
                     <div class="padding_icon_container">
                         <div class="padding_icon">
-                            <BorderRadiusBottomRight size="20px"/>
+                            <BorderRadiusBottomLeft size="20px"/>
                         </div>
                         <div class="padding_text">
                             4
@@ -427,7 +427,7 @@
         justify-content: center;
         aspect-ratio: 1;
 
-        filter: invert(24%) sepia(43%) saturate(5069%) hue-rotate(248deg) brightness(103%) contrast(93%);
+        /* filter: invert(24%) sepia(43%) saturate(5069%) hue-rotate(248deg) brightness(103%) contrast(93%); */
 
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
@@ -499,5 +499,9 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+    }
+
+    .opacity, .text_color, .font, .background_color {
+        padding: 4px;
     }
 </style>
