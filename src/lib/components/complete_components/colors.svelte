@@ -32,6 +32,14 @@
         gap: 5px;
     }
 
+    .direction_selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+
     .header_container {
         display: flex;
         align-items: center;
