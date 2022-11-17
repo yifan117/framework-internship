@@ -14,9 +14,7 @@
                 <DirectionSelector/>
             </div>
             <div class="align_container">
-                <div class="align_container">
-                    <AlignContainer/>
-                </div>
+                <AlignContainer/>
             </div>
         </div>
         <div class="container_bottom">
@@ -25,7 +23,10 @@
     </div>
 </div>
 
-<style>
+<style lang='stylus'>
+
+$color-1 = rgba(33, 37, 45, 0.1)
+
     .container {
         display: flex;
         flex-direction: column;
@@ -58,6 +59,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
+        gap: 6px;
     }
 
     .layout_icons_container {
@@ -65,4 +68,12 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .align_container
+        display grid
+        grid-template-rows repeat(3, 1fr)
+        grid-template-columns repeat(3, 1fr)
+        aspect-ratio 1
+        border 2px solid $color-1
+        border-radius 2px
 </style>
