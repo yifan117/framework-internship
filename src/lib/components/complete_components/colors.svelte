@@ -3,9 +3,9 @@
     import AlignContainer from '$lib/components/building_blocks/align_container.svelte';
     import DirectionSelectorColors from '$lib/components/building_blocks/DirectionSelectorColors.svelte';
 
-    import type { ColorsData } from '$lib/types';
+    import type { ColorData } from '$lib/types';
 
-    export let colors_data: ColorsData
+    export let color_data: ColorData
 </script>
 
 <div class="header_container">
@@ -14,7 +14,7 @@
 <div class="layout_icons_container">
     <div class="container_top">
         <div class="direction_selector">
-            <DirectionSelectorColors bind:display_vertical_colors={colors_data.display_vertical_colors} bind:display_collapsed_colors={colors_data.display_collapsed_colors}/>
+            <DirectionSelectorColors bind:display_vertical_color={color_data.display_vertical_color} bind:display_collapsed_color={color_data.display_collapsed_color}/>
         </div>
         <div class="align_container">
             <AlignContainer/>

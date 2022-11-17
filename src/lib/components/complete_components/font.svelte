@@ -2,6 +2,9 @@
     import FormatText from 'svelte-material-icons/FormatText.svelte';
     import TriangleDown from 'svelte-material-icons/TriangleSmallDown.svelte';
     import MarkSelector from '$lib/components/building_blocks/mark_selector.svelte';
+    import type { FontData } from '$lib/types';
+
+    export let font_data: FontData
 </script>
 
 <div class="header_container">
@@ -17,7 +20,7 @@
         </div>
     </div>
     <div class="mark_selector">
-        <MarkSelector/>
+        <MarkSelector bind:is_bold={font_data.is_bold} bind:is_italic={font_data.is_italic} bind:is_underlined={font_data.is_underlined}/>
     </div>
     <div class="text_color_selector">
         <div class="text_color">

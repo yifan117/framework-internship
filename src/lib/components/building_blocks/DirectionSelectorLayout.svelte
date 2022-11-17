@@ -40,6 +40,9 @@
     padding 8px
     border-radius 4px
     cursor pointer
+    
+    &:hover
+        background rgba(45, 55, 67, 0.1)
 
 .arrows
     display inline-flex
@@ -51,5 +54,8 @@
         display inline-flex
 
 .selected
-    background-color rgba(45, 55, 67, 0.1)
+    background-color rgba(45, 55, 67, 0.4)
+    
+    &:hover
+        background rgba(45, 55, 67, 0.4)
 </style>
