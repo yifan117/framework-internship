@@ -4,72 +4,66 @@
     import BorderSelector from '$lib/components/building_blocks/border_selector.svelte';
 </script>
 
-<div class="container">
-    <div class="header_container">
-        CONTAINER
+<div class="header_container">
+    CONTAINER
+</div>
+<div class="container_icons_container">
+    <div class="background_color_container">
+        <div class="background_color">
+            Background
+        </div>
+        <div class="color_bucket">
+            <ColorFill size='20px'/>
+        </div>
     </div>
-    <div class="container_icons_container">
-        <div class="background_color_container">
-            <div class="background_color">
-                Background
-            </div>
-            <div class="color_bucket">
-                <ColorFill size='20px'/>
-            </div>
-        </div>
 
-        <div class="radius_selector_container">
-            <BorderRadius/>
-        </div>
+    <div class="radius_selector_container">
+        <BorderRadius/>
+    </div>
 
-        <div class="border_corner_selector_container">
-            <BorderSelector/>
-        </div>
+    <div class="border_corner_selector_container" style='flex-direction: column'>
+        <BorderSelector/>
     </div>
 </div>
 
-<style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    
-    .header_container {
-        display: flex;
-        align-items: center;
-        opacity: 50%;
-        font-weight: 700;
-        font-size: 12px;
-    }
+<style lang='stylus'>
 
-    .color_bucket, .background_color_container, .radius_selector_container, .border_corner_selector_container, .background_color {
-        display: flex;
-        align-items: center;
-    }
+    .header_container
+        display flex
+        align-items center
+        opacity 50%
+        font-weight 700
+        font-size 12px
 
-    .color_bucket {
-        padding: 4px;
-        border-radius: 4px;
-        background: var(--bucket-purple);
-        justify-content: center;
-    }
+    .color_bucket
+    .background_color_container
+    .radius_selector_container
+    .border_corner_selector_container
+    .background_color
+        display flex
+        align-items center
 
-    .background_color_container, .radius_selector_container, .border_corner_selector_container {
-        justify-content: space-between;
-    }
+    .color_bucket
+        padding 4px
+        border-radius 4px
+        background var(--bucket-purple)
+        justify-content center
 
-    .container_icons_container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+    .background_color_container
+    .radius_selector_container
+    .border_corner_selector_container
+        justify-content space-between
 
-    .background_color {
-        padding: 4px;
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 500;
-    }
+    .container_icons_container
+        display flex
+        flex-direction column
+        gap 5px
+
+    .background_color
+        padding 4px
+        display flex
+        align-items center
+        font-size 14px
+        font-weight 500
+
 </style>

@@ -5,60 +5,54 @@
     import BorderRadiusTopRight from '$lib/icons/BorderRadiusTopRight.svelte';
 </script>
 
-<div class="container">
-    <div class="top">
-        <label for='border_radius_top_left'>
-            <div class="padding_icon">
-                    <BorderRadiusTopLeft size="25px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='border_radius_top_left'/>
-            </div>
-        </label>
+<div class="top">
+    <label for='border_radius_top_left'>
+        <div class="padding_icon">
+                <BorderRadiusTopLeft size="25px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='border_radius_top_left'/>
+        </div>
+    </label>
 
-        <label for='border_radius_top_right'>
-            <div class="padding_icon">
-                <BorderRadiusTopRight size="25px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='border_radius_top_right'/>
-            </div>
-        </label>
-    </div>
+    <label for='border_radius_top_right'>
+        <div class="padding_icon">
+            <BorderRadiusTopRight size="25px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='border_radius_top_right'/>
+        </div>
+    </label>
+</div>
 
-    <div class="bottom">
-        <label for='border_radius_bottom_left'>
-            <div class="padding_icon">
-                <BorderRadiusBottomLeft size="25px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='border_radius_bottom_left'/>
-            </div>
-        </label>
+<div class="bottom">
+    <label for='border_radius_bottom_left'>
+        <div class="padding_icon">
+            <BorderRadiusBottomLeft size="25px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='border_radius_bottom_left'/>
+        </div>
+    </label>
 
-        <label for='border_radius_bottom_right'>
-            <div class="padding_icon">
-                <BorderRadiusBottomRight size="25px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='border_radius_bottom_right'/>
-            </div>
-        </label>
-    </div>
+    <label for='border_radius_bottom_right'>
+        <div class="padding_icon">
+            <BorderRadiusBottomRight size="25px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='border_radius_bottom_right'/>
+        </div>
+    </label>
 </div>
 
 <style lang='stylus'>
 .top
 .bottom
-.container
     display flex
     align-items center
     justify-content center
     width 100%
     gap 8px
-
-.container
-    flex-direction column
 
 input::-webkit-outer-spin-button
 input::-webkit-inner-spin-button

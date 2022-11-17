@@ -4,43 +4,40 @@
     import Radius from '$lib/icons/Radius.svelte'
 </script>
 
-<div class="container">
-    <div class="padding_icon_container">
-        <label for='radius_CONTAINER'>
-            <div class="padding_icon">
-                <Radius size="20px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='radius_CONTAINER'/>
-            </div>
-        </label>
-    </div>
+<div class="padding_icon_container">
+    <label for='radius_CONTAINER'>
+        <div class="padding_icon">
+            <Radius size="20px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='radius_CONTAINER'/>
+        </div>
+    </label>
+</div>
 
-    <div class="padding_icon_container">
-        <label for='padding_left_right_CONTAINER'>
-            <div class="padding_icon">
-                <PaddingLeftRight size="20px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='padding_left_right_CONTAINER'/>
-            </div>
-        </label>
-    </div>
+<div class="padding_icon_container">
+    <label for='padding_left_right_CONTAINER'>
+        <div class="padding_icon">
+            <PaddingLeftRight size="20px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='padding_left_right_CONTAINER'/>
+        </div>
+    </label>
+</div>
 
-    <div class="padding_icon_container">
-        <label for='padding_top_down_CONTAINER'>
-            <div class="padding_icon">
-                <PaddingTopDown size="20px"/>
-            </div>
-            <div class="padding_text">
-                <input type='number' id='padding_top_down_CONTAINER'/>
-            </div>
-        </label>
-    </div>
+<div class="padding_icon_container">
+    <label for='padding_top_down_CONTAINER'>
+        <div class="padding_icon">
+            <PaddingTopDown size="20px"/>
+        </div>
+        <div class="padding_text">
+            <input type='number' id='padding_top_down_CONTAINER'/>
+        </div>
+    </label>
 </div>
 
 <style lang='stylus'>
-    .container
     label
     .padding_icon
     .padding_text
@@ -48,10 +45,6 @@
         align-items center
         justify-content space-between
         gap 8px
-
-    .container
-        width 100%
-        gap 6px
 
     label
         padding 4px

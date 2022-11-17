@@ -11,26 +11,26 @@
     </div>
 </div>
 
-<style>
-    .display, .functionality {
-        display: flex;
-        font-weight: 400px;
-        padding: 10px;
-        font-size: 14px;
-    }
+<style lang='stylus'>
+$color-1 = rgba(33, 37, 45, 0.2)
 
-    .display {
-        border-bottom: 2.5px solid var(--brand-purple);
-        font-weight: 600;
-    }
+    .display
+    .functionality
+        display flex
+        font-weight 400px
+        padding 10px
+        font-size 14px
 
-    .functionality {
-        border-bottom: 2.5px solid rgba(33, 37, 45, 0.2);
-        opacity: 50%;
-        font-weight: 600;
-    }
+    .display
+        border-bottom 2.5px solid var(--brand-purple)
+        font-weight 600
 
-    .container {
-        display: flex;
-    }
+    .functionality
+        border-bottom 2.5px solid $color-1
+        opacity 50%
+        font-weight 600
+
+    .container
+        display flex
+
 </style>

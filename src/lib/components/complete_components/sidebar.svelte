@@ -38,42 +38,37 @@
     </div>
 </div>
 
-<style>
+<style lang='stylus'>
 
-    .container {
-        overflow-y: scroll;
-        overflow-x: hidden;
-        scrollbar-color: var(--brand-purple) rgba(33, 37, 45, 0.2);
-        scrollbar-width: thin;
-        background: var(--sidebar-color);
-    }
+$color-1 = rgba(33, 37, 45, 0.2)
 
-    .side_bar {
-        max-width: 200px;
-        display: flex;
-        background: var(--sidebar-color);
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 10px;
-        width: 100%;
+    .container
+        overflow-y scroll
+        overflow-x hidden
+        scrollbar-color var(--brand-purple) rgba(33, 37, 45, 0.2)
+        scrollbar-width thin
+        background var(--sidebar-color)
 
-    }
+    .side_bar
+        max-width 200px
+        display flex
+        background var(--sidebar-color)
+        justify-content space-between
+        flex-direction column
+        padding 10px
+        width 100%
 
-    .text_container {
-        height: 36px;
-    }
+    .text_container
+        height 36px
+        display flex
+        align-items center
+        justify-content center
 
-    .contents_box_container {
-        display: flex;
-        padding: 8px;
-        gap: 8px;
-        flex-direction: column;
-        border-bottom: 2px solid rgba(33, 37, 45, 0.2);
-    }
+    .contents_box_container
+        display flex
+        padding 8px
+        gap 8px
+        flex-direction column
+        border-bottom 2px solid $color-1
 
-    .text_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 </style>

@@ -17,7 +17,7 @@
                 <AlignContainer/>
             </div>
         </div>
-        
+
         <div class="container_bottom">
             <PaddingSelector/>
         </div>
@@ -28,45 +28,40 @@
 
 $color-1 = rgba(33, 37, 45, 0.1)
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+    .container
+        display flex
+        flex-direction column
+        gap 5px
 
-    .header_container {
-        display: flex;
-        align-items: center;
-        opacity: 50%;
-        font-weight: 700;
-        font-size: 12px;
-    }
+    .header_container
+        display flex
+        align-items center
+        opacity 50%
+        font-weight 700
+        font-size 12px
 
-    .container_top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    .container_top
+        display flex
+        align-items center
+        justify-content space-between
 
-    .container_bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    .container_bottom
+        display flex
+        align-items center
+        justify-content space-between
 
-    .layout_icons_container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+    .layout_icons_container
+        display flex
+        flex-direction column
+        gap 10px
 
-    .direction_selector {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 4px;
-    }
+    .direction_selector
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+        gap 4px
+
 
     .align_container
         display grid
