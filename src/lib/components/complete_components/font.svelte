@@ -1,7 +1,8 @@
 <script lang='ts'>
-    import FormatText from 'svelte-material-icons/FormatText.svelte';
     import TriangleDown from 'svelte-material-icons/TriangleSmallDown.svelte';
     import MarkSelector from '$lib/components/building_blocks/mark_selector.svelte';
+    import TextColor from '$lib/components/building_blocks/TextColor.svelte';
+    
     import type { FontData } from '$lib/types';
 
     export let font_data: FontData
@@ -23,12 +24,7 @@
         <MarkSelector bind:is_bold={font_data.is_bold} bind:is_italic={font_data.is_italic} bind:is_underlined={font_data.is_underlined}/>
     </div>
     <div class="text_color_selector">
-        <div class="text_color">
-            Text Color
-        </div>
-        <div class="text_color_icon">
-            <FormatText size='20px'/>
-        </div>
+        <TextColor bind:text_color_is_selected={font_data.text_color_is_selected}/>
     </div>
     <div class="opacity_selector">
         <div class="opacity">
@@ -52,7 +48,6 @@
         font-size 12px
 
     .triangle_down_icon
-    .text_color_icon
         display flex
         align-items center
         justify-content space-between
@@ -70,7 +65,6 @@
         flex-direction column
         gap 5px
 
-    .text_color
     .font
     .opacity_selector
     .mark_selector
@@ -85,12 +79,7 @@
     .text_color_selector
         justify-content space-between
 
-    .text_color_icon
-        background var(--text-orange)
-        border-radius 4px
-
     .opacity
-    .text_color
     .font
         padding 4px
 

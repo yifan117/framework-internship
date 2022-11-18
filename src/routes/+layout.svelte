@@ -2,7 +2,9 @@
 
 <slot/>
 
-<style global>
+<style global lang='stylus'>
+$outline-purple = rgba(127, 17, 224, 0.3);
+
     :root {
         --page-color: #1d1d1d;
         --sidebar-color: #ffffff;

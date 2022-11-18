@@ -61,5 +61,7 @@ $color-1 = rgba(33, 37, 45, 0.1)
         grid-template-columns repeat(3, 1fr)
         aspect-ratio 1
         border 2px solid $color-1
+        max-width 80px
+        width 100%
         border-radius 2px
 </style>

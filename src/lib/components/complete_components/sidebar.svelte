@@ -4,9 +4,7 @@
 	import Font from '$lib/components/complete_components/font.svelte';
     import Container from '$lib/components/complete_components/container.svelte';
 	import Tabs from '$lib/components/complete_components/tabs.svelte';
-	import type { ContainerData, LayoutData } from '$lib/types';
-    import type { ColorData } from '$lib/types';
-    import type { FontData } from '$lib/types';
+	import type { ContainerData, LayoutData, TabData, ColorData, FontData } from '$lib/types';
 	
     let layout_data: LayoutData = {
         display_vertical_layout: true,
@@ -28,6 +26,7 @@
         is_bold: false,
         is_italic: false,
         is_underlined: false,
+        text_color_is_selected: false,
     }
 
     let container_data: ContainerData = {
@@ -40,13 +39,17 @@
         radius_bottom_right: 4,
     }
 
+    let tab_data: TabData = {
+        display_selected: true,
+    }
+
 
 </script>
 
 <div class="container">
     <div class="side_bar">
         <div class="text_container">
-            <Tabs/>
+            <Tabs bind:tab_data={tab_data}/>
         </div>
 
         <div class="contents_box_container">

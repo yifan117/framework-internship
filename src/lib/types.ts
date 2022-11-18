@@ -19,6 +19,7 @@ export type FontData = {
     is_bold: boolean;
     is_italic: boolean;
     is_underlined: boolean;
+    text_color_is_selected: boolean;
 }
 
 export type ContainerData = {
@@ -29,4 +30,8 @@ export type ContainerData = {
     radius_top_right: number;
     radius_bottom_left: number;
     radius_bottom_right: number;
+}
+
+export type TabData = {
+    display_selected: boolean;
 }
