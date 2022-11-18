@@ -28,6 +28,7 @@
         is_underlined: false,
         text_color_is_selected: false,
         text_icon_color: "var(--text-orange)",
+        font_opacity: 100,
     }
 
     let container_data: ContainerData = {

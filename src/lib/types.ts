@@ -21,6 +21,7 @@ export type FontData = {
     is_underlined: boolean;
     text_color_is_selected: boolean;
     text_icon_color: string;
+    font_opacity: number;
 }
 
 export type ContainerData = {

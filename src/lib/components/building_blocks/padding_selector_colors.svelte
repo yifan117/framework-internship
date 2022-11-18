@@ -36,37 +36,6 @@
 </label>
 
 <style lang='stylus'>
-
-    input::-webkit-outer-spin-button
-    input::-webkit-inner-spin-button
-        appearance none
-        margin 0
-
-    input[type=number]
-        appearance textfield
-
-    input
-        text-align center
-        max-width 20px
-        border none
-
-        &:focus
-            outline none
-
-    label
-        display flex
-        gap 8px
-        align-items center
-        justify-content space-between
-        padding 4px
-        border-radius 3px
-
-        &:hover
-            outline 1.5px solid rgba(127, 17, 224, 0.3)
-
-        &:focus-within
-            outline 1.5px solid var(--brand-purple)
-
     .padding_icon
         display flex
         align-items center

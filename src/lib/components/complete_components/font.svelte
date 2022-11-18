@@ -2,6 +2,7 @@
     import TriangleDown from 'svelte-material-icons/TriangleSmallDown.svelte';
     import MarkSelector from '$lib/components/building_blocks/mark_selector.svelte';
     import TextColor from '$lib/components/building_blocks/TextColor.svelte';
+    import Opacity from '$lib/components/building_blocks/Opacity.svelte';
     
     import type { FontData } from '$lib/types';
 
@@ -26,16 +27,19 @@
     <div class="text_color_selector">
         <TextColor bind:text_color_is_selected={font_data.text_color_is_selected} bind:text_icon_color={font_data.text_icon_color}/>
     </div>
-    <div class="opacity_selector">
-        <div class="opacity">
-            Opacity
-        </div>
+
+    <div class="container">
+        <Opacity bind:font_opacity={font_data.font_opacity}/>
     </div>
 </div>
 
 
 <style lang='stylus'>
 
+    .container
+        display flex
+        align-items center
+        justify-content center
     .mark_selector
         display inline-flex
         justify-content space-between
@@ -56,7 +60,6 @@
 
     .font_selector
     .text_color_selector
-    .opacity
         font-size 14px
         font-weight 400
 
@@ -66,11 +69,9 @@
         gap 5px
 
     .font
-    .opacity_selector
     .mark_selector
     .font_selector
     .text_color_selector
-    .opacity
         display flex
         align-items center
 
@@ -79,7 +80,6 @@
     .text_color_selector
         justify-content space-between
 
-    .opacity
     .font
         padding 4px
 

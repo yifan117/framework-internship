@@ -35,7 +35,7 @@ export let display_selected: boolean;
     padding 10px
     font-size 14px
     border-radius 2px
-    // border-bottom 2.5px solid rgba(33, 37, 45, 0.2)
+    border-bottom 2.5px solid rgba(33, 37, 45, 0.2)
     opacity 50%
     cursor pointer
     transition 0.1s ease-in-out

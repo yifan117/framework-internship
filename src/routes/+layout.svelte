@@ -5,15 +5,45 @@
 <style global lang='stylus'>
 $outline-purple = rgba(127, 17, 224, 0.3);
 
-    :root {
-        --page-color: #1d1d1d;
-        --sidebar-color: #ffffff;
-        --brand-purple: #4e29ca;
-        --text-orange: #F7A43A;
-        --bucket-purple: #bb6bd9;
-    }
+:root 
+    --page-color #1d1d1d
+    --sidebar-color #ffffff
+    --brand-purple #4e29ca
+    --text-orange #F7A43A
+    --bucket-purple #bb6bd9
 
-    * {
-        font-family: 'Inter';
-    }
+
+* 
+    font-family 'Inter'
+
+
+input::-webkit-outer-spin-button
+input::-webkit-inner-spin-button
+    appearance none
+    margin 0
+
+input[type=number]
+    appearance textfield
+
+input
+    text-align center
+    max-width 30px
+    border none
+
+    &:focus
+        outline none
+
+label
+    display flex
+    gap 8px
+    align-items center
+    justify-content space-between
+    padding 4px
+    border-radius 3px
+
+    &:hover
+        outline 1.5px solid rgba(127, 17, 224, 0.3)
+
+    &:focus-within
+        outline 1.5px solid var(--brand-purple)
 </style>
