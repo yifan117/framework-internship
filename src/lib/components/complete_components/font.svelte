@@ -24,7 +24,7 @@
         <MarkSelector bind:is_bold={font_data.is_bold} bind:is_italic={font_data.is_italic} bind:is_underlined={font_data.is_underlined}/>
     </div>
     <div class="text_color_selector">
-        <TextColor bind:text_color_is_selected={font_data.text_color_is_selected}/>
+        <TextColor bind:text_color_is_selected={font_data.text_color_is_selected} bind:text_icon_color={font_data.text_icon_color}/>
     </div>
     <div class="opacity_selector">
         <div class="opacity">

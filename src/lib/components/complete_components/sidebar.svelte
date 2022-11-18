@@ -27,6 +27,7 @@
         is_italic: false,
         is_underlined: false,
         text_color_is_selected: false,
+        text_icon_color: "var(--text-orange)",
     }
 
     let container_data: ContainerData = {

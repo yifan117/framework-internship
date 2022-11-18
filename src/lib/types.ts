@@ -20,6 +20,7 @@ export type FontData = {
     is_italic: boolean;
     is_underlined: boolean;
     text_color_is_selected: boolean;
+    text_icon_color: string;
 }
 
 export type ContainerData = {

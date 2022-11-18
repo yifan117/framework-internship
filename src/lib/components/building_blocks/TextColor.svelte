@@ -32,7 +32,9 @@
             text_color_is_selected = true;
         }
     }
+
     export let text_color_is_selected: boolean;
+    export let text_icon_color: string;
 </script>
 
 <div class="container">
@@ -41,16 +43,15 @@
         <div class="text_color">
             Text Color
         </div>
-        <div class="text_color_icon">
+        <div class="text_color_icon" style='background: {text_icon_color}'>
             <FormatText size='20px'/>
         </div>
     </div>
 
     <div class="color_picker" class:selected={text_color_is_selected}>
         {#each colors as color}
-            <div class="color_container" style='background: {color.hex}'>
-            
-            </div>
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div class="color_container" style='background: {color.hex}' on:click={() => text_icon_color = color.hex}></div>
         {/each}
     </div>
 </div>
@@ -96,11 +97,11 @@ $outline-purple = rgba(127, 17, 224, 0.3);
         gap 8px
 
     .selected
+        display grid
         grid-template-rows repeat(3, 1fr)
         grid-template-columns repeat(7, 1fr)
         width 100%
         gap 6px
-        display grid
     
     .color_container
         display flex
