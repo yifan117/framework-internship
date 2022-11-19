@@ -42,7 +42,8 @@ export let display_selected: boolean;
 
 .display:hover
 .functionality:hover
-    background rgba(127, 17, 224, 0.3)
+.selected:hover
+    background rgba(127, 17, 224, 0.1)
 
 .selected
     opacity 100%
