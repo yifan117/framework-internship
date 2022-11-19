@@ -1,9 +1,9 @@
 <script lang='ts'>
-    import ColorFill from '$lib/icons/FormatColorFill.svelte';
     import BorderRadius from '$lib/components/building_blocks/border_radius.svelte';
     import BorderSelector from '$lib/components/building_blocks/border_selector.svelte';
     
     import type { ContainerData } from '$lib/types';
+	import BackgroundColor from '$lib/components/building_blocks/BackgroundColor.svelte';
 
     export let container_data: ContainerData;
 </script>
@@ -13,12 +13,7 @@
 </div>
 <div class="container_icons_container">
     <div class="background_color_container">
-        <div class="background_color">
-            Background
-        </div>
-        <div class="color_bucket">
-            <ColorFill size='20px'/>
-        </div>
+        <BackgroundColor/>
     </div>
 
     <div class="radius_selector_container">
@@ -48,19 +43,11 @@
         font-weight 700
         font-size 12px
 
-    .color_bucket
     .background_color_container
     .radius_selector_container
     .border_corner_selector_container
-    .background_color
         display flex
         align-items center
-
-    .color_bucket
-        padding 4px
-        border-radius 4px
-        background var(--bucket-purple)
-        justify-content center
 
     .background_color_container
     .radius_selector_container
@@ -71,12 +58,5 @@
         display flex
         flex-direction column
         gap 5px
-
-    .background_color
-        padding 4px
-        display flex
-        align-items center
-        font-size 14px
-        font-weight 500
 
 </style>

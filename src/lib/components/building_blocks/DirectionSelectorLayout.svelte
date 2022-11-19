@@ -54,8 +54,8 @@
         display inline-flex
 
 .selected
-    background-color rgba(45, 55, 67, 0.4)
+    background-color rgba(45, 55, 67, 0.28)
     
     &:hover
-        background rgba(45, 55, 67, 0.4)
+        background rgba(45, 55, 67, 0.28)
 </style>
