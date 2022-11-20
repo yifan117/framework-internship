@@ -11,24 +11,24 @@
 <div class="arrows top">
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="arrow down" class:selected={display_vertical_layout} on:click={() => display_vertical_layout = true}>
-        <ArrowDown size='20px'/>
+        <ArrowDown/>
     </div>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="arrow right" class:selected={!display_vertical_layout} on:click={() => display_vertical_layout = false}>
-        <ArrowRight size='20px'/>
+        <ArrowRight/>
     </div>
 </div>
 
 <div class="arrows bottom">
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="arrow expand" class:selected={display_collapsed_layout} on:click={() => display_collapsed_layout = true}>
-        <ArrowExpand size='20px'/>
+        <ArrowExpand/>
     </div>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="arrow collapse" class:selected={!display_collapsed_layout} on:click={() => display_collapsed_layout = false}>
-        <ArrowCollapse size='20px'/>
+        <ArrowCollapse/>
     </div>
 </div>
 
@@ -40,6 +40,7 @@
     padding 8px
     border-radius 4px
     cursor pointer
+    font-size 20px
     
     &:hover
         background rgba(45, 55, 67, 0.1)
