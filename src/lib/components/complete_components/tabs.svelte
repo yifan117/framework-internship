@@ -21,6 +21,4 @@ $color-1 = rgba(33, 37, 45, 0.2)
         height 100%
         align-items center
 
-   
-
 </style>

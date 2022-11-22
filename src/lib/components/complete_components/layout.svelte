@@ -43,6 +43,10 @@ $color-1 = rgba(33, 37, 45, 0.1)
         font-weight 700
         font-size 12px
 
+        -webkit-user-select none /* Safari */
+        -ms-user-select none /* IE 10 and IE 11 */
+        user-select none /* Standard syntax */
+
     .container_top
         display flex
         align-items center

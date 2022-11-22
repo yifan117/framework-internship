@@ -51,6 +51,10 @@
         font-weight 700
         font-size 12px
 
+        -webkit-user-select none /* Safari */
+        -ms-user-select none /* IE 10 and IE 11 */
+        user-select none /* Standard syntax */
+
     .triangle_down_icon
         display flex
         align-items center

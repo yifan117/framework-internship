@@ -40,6 +40,10 @@ export let display_selected: boolean;
     cursor pointer
     transition 0.1s ease-in-out
 
+    -webkit-user-select none /* Safari */
+    -ms-user-select none /* IE 10 and IE 11 */
+    user-select none /* Standard syntax */
+
 .display:hover
 .functionality:hover
 .selected:hover

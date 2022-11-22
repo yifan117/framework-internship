@@ -43,6 +43,10 @@
         font-weight 700
         font-size 12px
 
+        -webkit-user-select none /* Safari */
+        -ms-user-select none /* IE 10 and IE 11 */
+        user-select none /* Standard syntax */
+
     .background_color_container
     .radius_selector_container
     .border_corner_selector_container
