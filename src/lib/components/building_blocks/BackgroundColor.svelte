@@ -26,6 +26,9 @@
         justify-content center
         font-size 20px
         aspect-ratio 1
+        display flex
+        align-items center
+        justify-content center
 
     .background_color
         padding 4px
