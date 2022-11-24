@@ -5,6 +5,11 @@
 <style global lang='stylus'>
 $outline-purple = rgba(127, 17, 224, 0.3);
 
+*
+    -webkit-user-select none /* Safari */
+    -ms-user-select none /* IE 10 and IE 11 */
+    user-select none /* Standard syntax */
+
 :root 
     --page-color #1d1d1d
     --sidebar-color #ffffff
