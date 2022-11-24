@@ -21,6 +21,7 @@
 		"svelte": "^3.53.1",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.7",
+		"svrollbar": "^0.12.0",
 		"tslib": "^2.3.1",
 		"typescript": "^4.7.4",
 		"vite": "^3.1.0"

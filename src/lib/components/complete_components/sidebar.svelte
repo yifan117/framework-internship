@@ -5,7 +5,8 @@
     import Container from '$lib/components/complete_components/container.svelte';
 	import Tabs from '$lib/components/complete_components/tabs.svelte';
 	import type { ContainerData, LayoutData, TabData, ColorData, FontData } from '$lib/types';
-	
+
+    import { Svroller } from 'svrollbar'	
     let layout_data: LayoutData = {
         display_vertical_layout: true,
         display_collapsed_layout: true,
@@ -49,35 +50,41 @@
 </script>
 
 <div class="container">
-    <div class="side_bar">
-        <div class="text_container">
-            <Tabs bind:tab_data={tab_data}/>
-        </div>
+    <Svroller 
+    width="100%"
+    height="100%"
+    initiallyVisible={true}
+    >
+        <div class="side_bar">
+            <div class="text_container">
+                <Tabs bind:tab_data={tab_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Layout bind:layout_data={layout_data}/>
-        </div>
+            <div class="contents_box_container">
+                <Layout bind:layout_data={layout_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Colors bind:color_data={color_data}/>
-        </div>
+            <div class="contents_box_container">
+                <Colors bind:color_data={color_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Font bind:font_data={font_data}/>
-        </div>
+            <div class="contents_box_container">
+                <Font bind:font_data={font_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Container bind:container_data={container_data}/>
-        </div>
+            <div class="contents_box_container">
+                <Container bind:container_data={container_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Font bind:font_data={font_data}/>
-        </div>
+            <div class="contents_box_container">
+                <Font bind:font_data={font_data}/>
+            </div>
 
-        <div class="contents_box_container">
-            <Font bind:font_data={font_data}/>
-        </div>
-    </div>
+            <div class="contents_box_container">
+                <Font bind:font_data={font_data}/>
+            </div>
+        </div> 
+    </Svroller>
 </div>
 
 <style lang='stylus'>
@@ -85,12 +92,12 @@
 $color-1 = rgba(33, 37, 45, 0.2)
 
     .container
-        overflow-y scroll
-        scrollbar-color var(--brand-purple) rgba(33, 37, 45, 0.2)
-        scrollbar-width thin
         background var(--sidebar-color)
         max-width 280px
-        width 100%
+        width 100% 
+
+        --svrollbar-thumb-width 8px
+        --svrollbar-thumb-opacity 0.4
 
     .side_bar
         max-width 250px

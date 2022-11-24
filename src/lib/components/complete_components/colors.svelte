@@ -52,7 +52,7 @@ $color-1 = rgba(33, 37, 45, 0.1)
         display flex
         align-items center
         justify-content space-between
-        gap 6px
+        gap 4px
 
     .layout_icons_container
         display flex
